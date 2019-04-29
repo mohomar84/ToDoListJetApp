@@ -1,0 +1,43 @@
+<!--
+ Copyright (c) 2014, 2019, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+ -->
+<div class="oj-hybrid-padding">
+  <div style="align-content: center;">
+              </div>
+              <div class="oj-flex-item" style="margin-left: 40%">
+                <oj-input-text id="newItem" maxlength='30' value="{{newItem}}" placeholder="enter new item"></oj-input-text>
+                <oj-button id="saveBtn" on-click="[[create]]">Add </oj-button>
+                <oj-button id="deleteItems" on-click="[[deleteItems]]" enable=[[somethingChecked]]>Remove </oj-button>
+              </div>
+    
+    </p>
+    <h3 style="margin-left: 20%">Todo</h3>
+    <oj-table id="table" data="[[datasource]]" style="width:60%;margin-left: 20%"
+          columns='[{"headerText": "Remove", "id": "column1", "sortable": "disabled"},
+                    {"headerText": "Todo", "field": "todo", "sortable": "enabled"}]'
+          selectionMode='{"row": "none", "column": "none"}'
+          row-renderer='[[oj.KnockoutTemplateUtils.getRenderer("row", true)]]'>
+        </oj-table>
+    </div>
+   
+
+
+
+<script type="text/html" id="row">    
+  <tr>
+    <td>
+      <oj-checkboxset aria-hidden='true' on-value-changed="[[$parent.enableDelete]]" class='oj-checkboxset-no-chrome'> <!-- oj-checkboxset-no-chrome -->
+        <oj-option data-bind="attr:{id: id}" value="[[id]]"></oj-option>
+      </oj-checkboxset>
+    </td>
+    <td>
+      
+      <div id="todo" data-bind="text: todo"></div></td>
+      <!--
+
+        , click: function(data, event){$root.showChangeNameDialog(id,data,event)}
+      -->
+  </tr>
+</script>
+</div>

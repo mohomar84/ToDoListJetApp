@@ -1,0 +1,17 @@
+<!--
+ Copyright (c) 2014, 2019, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+ -->
+<div class="oj-hybrid-padding">
+  <h2>To Do List App</h2>
+  <br/>
+  <div style="margin-left: 40%">
+      <oj-form-layout id="ofl1" >
+          <oj-input-text id="inputcontrol" required value="{{username}}" label-hint="User Name"></oj-input-text>
+
+          <oj-input-password id="password" value="{{password}}" required label-hint="Password">
+            </oj-input-password>
+    <oj-button id='button1' on-oj-action="[[login]]" >Login </oj-button>
+  </oj-form-layout>
+  </div>
+</div>
