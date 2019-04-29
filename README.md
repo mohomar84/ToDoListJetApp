@@ -1,21 +1,22 @@
 # ToDo List Jet
 
-**About **
+**About**
 
-To Do Lis Jet App is Fronend Based on Oracle Jet open source JavaScript libraries.
-The application Backend in based on Java Spring Boot.
+To Do Lis Jet App is frontend based on Oracle Jet open source javaScript libraries.
+The application backend in based on Java Spring Boot.
 
 **Installing**
 
-Make sure you have Nodjs intalled and then install oracle Jet
+Make sure you have Nodjs installed and then install oracle Jet
 
-* *npm install -g @oracle/ojet-cli * *
+* *npm install -g @oracle/ojet-cli* *
 
 
 **Run the Test**
 
-Download the application source and locate the application in your code editor or termanl and run the command 
-* *ojet serve * *
+Download the application source and locate the application in your code editor or  terminal and run the command
+
+* *ojet serve* *
 
 **Related GitHub Projects**
 
